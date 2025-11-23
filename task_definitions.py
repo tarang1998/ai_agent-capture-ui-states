@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 LINEAR_TASKS = [
     "Create a new project in Linear with name 'Galactus', priority 'High', set start date to today, and target date to 2 weeks from now. Add summary 'Project management system for cosmic scale applications'",
-    "Create a new issue in Linear with title 'Implement authentication system', add description 'Need to add OAuth2 support', set priority to 'Urgent', and add label 'backend', assign project as 'Galactus' and status as 'In Progress'",
+    "Create a new issue in Linear with title 'Implement authentication system', add description 'Need to add OAuth2 support', set priority to 'Urgent',assign project as 'Galactus' and status as 'In Progress'",
     "Create a new issue in Linear with title 'Fix data synchronization bug', add description 'Investigate and resolve data sync issues between services', set priority to 'Urgent', and add label 'Bug', assign project as 'Galactus' and status as 'TODO'",
     "Navigate to Linear issues page and filter issues by status 'In Progress'",
 ]
