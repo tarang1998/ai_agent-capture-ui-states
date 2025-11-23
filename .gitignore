@@ -1,0 +1,9 @@
+.env
+uv.lock
+
+# Virtual Environments
+.venv*
+venv/
+
+debug.log
+info.log
