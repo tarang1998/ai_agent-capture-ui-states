@@ -7,3 +7,7 @@ venv/
 
 debug.log
 info.log
+workflow_captures.log
+
+browser_profile
+__pycache__/

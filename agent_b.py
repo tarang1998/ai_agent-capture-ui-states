@@ -174,6 +174,7 @@ class AgentB:
         judge_prompt = f"""Evaluate if the task was completed successfully.
 
         Task: {task}
+        Detailed Description: {optimized_description}
         Application: {app_name}
 
         Success criteria:

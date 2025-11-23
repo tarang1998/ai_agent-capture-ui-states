@@ -37,7 +37,7 @@ class ParsedQuestionSchema(BaseModel):
         description="Full URL to the application, must start with https. (e.g., 'https://linear.app', 'https://github.com')"
     )
     task: str = Field(
-        description="Clean task description without the app name"
+        description="Clean task description. ** IMP : do not remove any specifications from the prompt"
     )
     task_name: str = Field(
         description="Filesystem-safe task identifier in snake_case (e.g., 'create_project_urgent', 'filter_issues_by_priority'). Max 5 words, lowercase, underscores only."
