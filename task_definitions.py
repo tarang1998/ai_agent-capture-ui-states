@@ -31,7 +31,7 @@ LINEAR_TASKS = [
 
 ASANA_TASKS = [
     "Create a new project in Asana named 'Website Redesign' with layout 'List', add description 'Complete redesign of company website with modern UI/UX', and add 3 tasks: 'Design mockups', 'Frontend implementation', and 'QA testing' ",
-    "Create a new task in Asana with title 'Implement dark mode feature', add description 'Add dark mode toggle to user settings with persistent preference storage', set priority to 'High', and add it to the 'Website Redesign' project",
+    "Create a new task in Asana with title 'Implement dark mode feature', add description 'Add dark mode toggle to user settings with persistent preference storage', and add it to the 'Website Redesign' project",
     "Find the task 'Frontend implementation' under project 'Website Redesign' in Asana and add 3 subtasks: 'Setup React components', 'Implement responsive layouts', and 'Add animations and transitions'",
     "In the 'Website Redesign' project in Asana, move the task 'Design mockups' from 'To Do' section to 'In Progress' section, then add a comment 'Started working on initial wireframes'",
 ]
