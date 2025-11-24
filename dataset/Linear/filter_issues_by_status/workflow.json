@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "app_name": "Linear",
+    "task_name": "filter_issues_by_status",
+    "task_description": "filter issues by status 'In Progress'",
+    "start_url": "https://linear.app",
+    "capture_timestamp": "2025-11-23T06:09:10.767320",
+    "total_duration_seconds": 20.427987,
+    "total_steps": 5,
+    "success": true,
+    "judgement": {
+      "verdict": true,
+      "reasoning": "The user requested to navigate to https://linear.app and filter issues by status 'In Progress'. The agent successfully navigated to the URL (Step 1), clicked the 'Filter' button (Step 2), selected 'Status' from the filter options (Step 3), and finally selected 'In Progress' (Step 4). The final screenshot confirms that the filter 'Status: In Progress' was successfully applied, showing only the relevant issue. The execution was efficient, and all user requirements were met exactly as requested. Tool usage was appropriate and successful.",
+      "failure_reason": "",
+      "impossible_task": false,
+      "reached_captcha": false
+    }
+  },
+  "steps": [
+    {
+      "step_number": 0,
+      "url": "https://linear.app",
+      "title": "Initial Actions",
+      "screenshot_path": null,
+      "description": "Initial navigation",
+      "step_task": "🔗 Navigated to https://linear.app",
+      "actions_taken": [
+        {
+          "action_name": "NavigateActionModel",
+          "params": {
+            "navigate": {
+              "url": "https://linear.app",
+              "new_tab": false
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "success": null,
+      "is_done": false
+    },
+    {
+      "step_number": 1,
+      "url": "https://linear.app/softlight-linear-test/team/SOF/active",
+      "title": "Linear",
+      "screenshot_path": "dataset\\Linear\\filter_issues_by_status\\step_001.png",
+      "description": "The current page shows the active issues for the team, grouped by status ('In Progress' and 'Todo'). The goal is to filter issues by status 'In Progress'. Since the current view already shows issues grouped by status, and the 'In Progress' group is visible, I need to find the filter button to apply a specific filter. The interactive element list shows a button labeled \"Filter\" with index 4146. I will click this button to open the filter menu.",
+      "step_task": "Clicked button \"Filter\" aria-label=Add filter",
+      "actions_taken": [
+        {
+          "action_name": "ClickActionModel",
+          "params": {
+            "click": {
+              "index": 4146
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "success": null,
+      "is_done": false
+    },
+    {
+      "step_number": 2,
+      "url": "https://linear.app/softlight-linear-test/team/SOF/active",
+      "title": "Linear",
+      "screenshot_path": "dataset\\Linear\\filter_issues_by_status\\step_002.png",
+      "description": "The previous step successfully opened the filter menu. The current UI state shows a modal/dropdown with various filter options. The goal is to filter by 'Status'. I see an option labeled \"Status\" with index 4806 in the shadow DOM list. I will click this element to select the Status filter.",
+      "step_task": "Clicked li role=option \"Status\n▶\" id=1status",
+      "actions_taken": [
+        {
+          "action_name": "ClickActionModel",
+          "params": {
+            "click": {
+              "index": 4806
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "success": null,
+      "is_done": false
+    },
+    {
+      "step_number": 3,
+      "url": "https://linear.app/softlight-linear-test/team/SOF/active",
+      "title": "Linear",
+      "screenshot_path": "dataset\\Linear\\filter_issues_by_status\\step_003.png",
+      "description": "The previous step successfully opened the filter menu and selected 'Status', which expanded to show available statuses: 'Todo' and 'In Progress'. The goal is to filter by 'In Progress'. I need to click the 'In Progress' option. This option is listed with index 5057 and is a list item with a checkbox.",
+      "step_task": "Clicked li role=option \"In Progress\n1\nissue\" id=1in-progress",
+      "actions_taken": [
+        {
+          "action_name": "ClickActionModel",
+          "params": {
+            "click": {
+              "index": 5057
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "success": null,
+      "is_done": false
+    },
+    {
+      "step_number": 4,
+      "url": "https://linear.app/softlight-linear-test/team/SOF/active",
+      "title": "Linear",
+      "screenshot_path": "dataset\\Linear\\filter_issues_by_status\\step_004.png",
+      "description": "The previous steps successfully opened the filter menu, selected 'Status', and then selected 'In Progress'. The current UI state shows the filter applied: \"Status is In Progress\". The list of issues is now filtered, showing only one issue under the 'In Progress' group, and a message indicating \"5 issues hidden by filters\". The task was to filter issues by status 'In Progress', which is now complete and visible in the UI. I can now confirm the task is finished.",
+      "step_task": "Successfully filtered issues by status 'In Progress'. The resulting view shows the applied filter and the corresponding issues.",
+      "actions_taken": [
+        {
+          "action_name": "DoneActionModel",
+          "params": {
+            "done": {
+              "text": "Successfully filtered issues by status 'In Progress'. The resulting view shows the applied filter and the corresponding issues.",
+              "success": true
+            }
+          }
+        }
+      ],
+      "errors": [],
+      "success": true,
+      "is_done": true,
+      "judgement": {
+        "verdict": true,
+        "reasoning": "The user requested to navigate to https://linear.app and filter issues by status 'In Progress'. The agent successfully navigated to the URL (Step 1), clicked the 'Filter' button (Step 2), selected 'Status' from the filter options (Step 3), and finally selected 'In Progress' (Step 4). The final screenshot confirms that the filter 'Status: In Progress' was successfully applied, showing only the relevant issue. The execution was efficient, and all user requirements were met exactly as requested. Tool usage was appropriate and successful.",
+        "failure_reason": "",
+        "impossible_task": false
+      }
+    }
+  ]
+}
